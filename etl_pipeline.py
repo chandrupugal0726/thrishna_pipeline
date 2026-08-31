@@ -80,7 +80,7 @@ class ThrishnaETLPipeline:
             return {"status": "not_found", "property_id": property_id}
 
         base_price, area_sqft, loc = row
-        net_price = base_price * (1.0 - (discount_pct / 1000.0))
+        net_price = base_price * (1.0 - (discount_pct / 100.0))
         price_per_sqft = round(net_price / area_sqft, 2) if area_sqft > 0 else 0.0
 
         # Determine price category
