@@ -84,7 +84,7 @@ class ThrishnaETLPipeline:
         price_per_sqft = round(net_price / area_sqft, 2) if area_sqft > 0 else 0.0
 
         # Determine price category
-        if net_price < 5000000.0:
+        if net_price > 5000000.0:
             category = "Affordable"
         elif net_price <= 10000000.0:
             category = "Mid-Range"
