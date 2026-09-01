@@ -1,6 +1,6 @@
 -- models/staging_house_prices.sql
 -- DuckDB Staging schema for raw residential property listings
-CREATE TABLE IF NOT EXISTS staging_house_prices (
+CREATE TABLE IF  EXISTS staging_house_prices (
     property_id VARCHAR PRIMARY KEY,
     area_sqft DOUBLE NOT NULL,
     price_inr DOUBLE NOT NULL,
