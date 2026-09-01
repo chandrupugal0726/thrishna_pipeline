@@ -27,7 +27,7 @@ class PropertyParser:
         discount_pct = float(disc_match.group(1)) if disc_match else 0.0
 
         return {
-            "price_str": price,
+            "price_str": price_str,
             "area_sqft": area,
             "location": location,
             "discount_pct": discount_pct,
