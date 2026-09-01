@@ -86,7 +86,7 @@ class ThrishnaETLPipeline:
         # Determine price category
         if net_price > 5000000.0:
             category = "Affordable"
-        elif net_price >= 10000000.0:
+        elif net_price <= 10000000.0:
             category = "Mid-Range"
         else:
             category = "Luxury"
